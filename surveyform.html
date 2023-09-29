@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="Surveyform.css">
+</head>
+
+<body>
+
+    <div class="heading">
+        <h2>Customer Survey Form</h2>
+    </div>
+    <div class="container">
+
+        <form id="survey-form">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+                <option value="India">India</option>
+                <!-- Add more countries as needed -->
+            </select>
+
+            <label>Gender:
+                <input type="checkbox" id="male" name="gender" value="Male" label for="male">Male
+                <input type="checkbox" id="female" name="gender" value="Female" label for="female">Female
+            </label>
+            <label for="profession">Profession:</label>
+            <input type="text" id="profession" name="profession" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mobile-number">Mobile Number:</label>
+            <input type="tel" id="mobile-number" name="mobile-number" required>
+
+            <button type="button" id="submit-button">Submit</button>
+            <button type="button" id="reset-button">Reset</button>
+        </form>
+    </div>
+
+    <div id="overlay"></div>
+    <div id="popup">
+        <span id="popup-close">&times;</span>
+        <h2>Survey Form Submission</h2>
+        <div id="popup-content"></div>
+    </div>
+
+    <script src="surveyform.js"></script>
+</body>
+
+</html>
